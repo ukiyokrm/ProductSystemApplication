@@ -1,0 +1,208 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #4a90e2;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc; /* Border for the container */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form label {
+  flex: 1;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+form input {
+  flex: 2;
+  padding: 0.5rem;
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #4a90e2; /* Change border color on focus */
+}
+
+/* Button Styles */
+button {
+  padding: 0.5rem 1rem; /* Padding for all buttons */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  margin: 0.5rem; /* Margin for spacing */
+}
+
+/* Primary Button */
+button[type='button'] {
+  background-color: #4a90e2; /* Primary button color */
+  color: white; /* Text color */
+}
+
+button[type='button']:hover {
+  background-color: #357ab8; /* Darker shade for hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Edit Button */
+button.edit-button {
+  background-color: #4caf50; /* Green for edit */
+  color: white; /* Text color */
+}
+
+button.edit-button:hover {  
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Delete Button */
+button.delete-button {
+  background-color: #e74c3c; /* Red for delete */
+}
+
+button.delete-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Show Deleted Products Button */
+.show-deleted-button {
+  background-color: #f39c12; /* Orange for show deleted */
+  color: white; /* Text color */
+}
+
+.show-deleted-button:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Disabled State for Buttons */
+button:disabled {
+  background-color: #ccc; /* Gray background for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+/* Product List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Border for product list items */
+li {
+  border: 1px solid #ccc; /* Add a border around each list item */
+  border-radius: 4px; /* Rounded corners for list items */
+  margin-bottom: 0.5rem; /* Space between list items */
+  padding: 0.5rem; /* Padding inside list items */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li div {
+    margin-bottom: 0.5rem;
+  }
+  /* Restore Button */
+.restore-button {
+  background-color: #f39c12; /* Orange for restore */
+  color: white; /* Text color */
+  margin-left: 1rem; /* Spacing between buttons */
+}
+
+.restore-button:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+}
+}
